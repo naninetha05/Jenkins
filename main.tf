@@ -16,7 +16,7 @@ provider "aws" {
 resource "aws_instance" "my_server" {
   instance_type        = "t3.micro"
   ami                  = "ami-07a00cf47dbbc844c"
-  key_name             = "projeck-key"
+  key_name             = "project-key"
   availability_zone    = "ap-south-1b"
   hibernation          = true
 
