@@ -1,9 +1,3 @@
-terraform {
-  backend "s3" {
-    bucket = "mybuckt-jenkins"
-    key    = "backend/terraform.tfstate"
-    region = "ap-south-1"
-  }
 
   required_providers {
     aws = {
