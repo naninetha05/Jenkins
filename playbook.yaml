@@ -1,16 +1,16 @@
 ---
 - name: Configure EC2 instance
-  remote_user: ec2-user
+  remote_user: ubuntu
   become: true
   become_method: sudo
   hosts: all
   tasks:
-    - name: Install Apache
-      yum:
+    - name: Install Apache2
+      apt:
         name: httpd
         state: present
 
-    - name: Start Apache
+    - name: Start Apache2
       service:
         name: httpd
         state: started
